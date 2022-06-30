@@ -59,7 +59,7 @@ public class OrdersController : ControllerBase
     }
 
     [HttpDelete("{id}")]
-    public ActionResult Remove(int id)
+    public ActionResult Cancel(int id)
     {
         var existingItem = _service.GetById(id);
 
