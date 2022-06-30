@@ -7,7 +7,6 @@ namespace CSharp.Services
     public static class OrderService
     {
         static List<Order> Orders { get; }
-        static int nextId = 3;
         static OrderService()
         {
             Orders = new List<Order>

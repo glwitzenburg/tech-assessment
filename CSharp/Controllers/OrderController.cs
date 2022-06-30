@@ -62,31 +62,5 @@ namespace CSharp.Controllers
 
 			return NoContent();
 		}
-
-		/*
-
-        [HttpPatch]
-        [Route("/addOrder")]
-		public Models.Order[] AddNewOrder()
-        {
-			var lastOrderItem = orders[orders.Length - 1];
-			var newOrderItem = new Models.Order { Id = lastOrderItem.Id++, Name = "f", Price = 10.00 };
-			orders.Append(newOrderItem);
-			return orders;
-        }
-
-        [HttpDelete]
-        [Route("/delete")]
-		public Models.Order[] DeleteOrder(int orderId)
-        {
-			var order = GetOrderById(orderId);
-
-			if(order != null)
-            {
-				orders = orders.Where(val => val.Id != orderId).ToArray();
-			}
-			return orders;
-        }
-		*/
 	}
 }
